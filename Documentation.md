@@ -17,7 +17,7 @@ O ProCalc é uma espécie de "Calculadora Programável", onde você pode desenvo
   * <a href="#num1"> Operador de adição </a> 
   * <a href="#num2"> Operador de subtração </a> 
   * <a href="#num3"> Operador de multiplicação </a>
-  * <a href="#num4"> Operador de soma </a>
+  * <a href="#num4"> Operador de divisão </a>
   
 ### Cálculo de variáveis:
   * <a href="#var1"> Inserção de valores </a>
@@ -39,7 +39,7 @@ O ProCalc é uma espécie de "Calculadora Programável", onde você pode desenvo
  * <a href="#men1"> Item arquivo (file) </a>
  * <a href="#men2"> Item edição (edit) </a>
  * <a href="#men3"> Item executar (run) </a>
- * <a href="#men4"> Item visualização (view) </a>
+ * <a href="#men4"> Item visto (view) </a>
  * <a href="#men5"> Item ajuda (help) </a>
 
 <a name="util"><h1 align="center"> ---------- Utilização do Software ---------- </h1></a>
@@ -80,7 +80,7 @@ O ProCalc é uma espécie de "Calculadora Programável", onde você pode desenvo
   
 ## 2. Cálculo de variáveis
 
-   ### <a name="num1"> 2.1 Inserção de valores </a>
+   ### <a name="var1"> 2.1 Inserção de valores </a>
   
   --texto--
   
@@ -88,7 +88,7 @@ O ProCalc é uma espécie de "Calculadora Programável", onde você pode desenvo
   
   <a href="#menu1">Voltar ao menu </a>
   
-  ### <a name="num2"> 2.2 Operação em variáveis </a>
+  ### <a name="var2"> 2.2 Operação em variáveis </a>
   
   --texto--
   
@@ -172,7 +172,11 @@ O ProCalc é uma espécie de "Calculadora Programável", onde você pode desenvo
 
 ### <a name="men1"> 5.1 Item arquivo (file) </a>
   
-   --texto--
+ * novo (new) - 
+ * abrir (open) -
+ * salvar (save) -
+ * salvar como (save as)
+ * sair (quit) -
   
   ![](/Imagens/.png)
   
@@ -180,7 +184,12 @@ O ProCalc é uma espécie de "Calculadora Programável", onde você pode desenvo
   
   ### <a name="men2"> 5.2 Item edição (edit) </a>
   
-   --texto--
+ * selecionar (undo) - 
+ * copiar (copy) -
+ * recortar (cut) -
+ * colar (paste)
+ * converter (conversor) -
+ * limpar (clear) -
   
   ![](/Imagens/.png)
   
@@ -188,15 +197,21 @@ O ProCalc é uma espécie de "Calculadora Programável", onde você pode desenvo
   
   ### <a name="men3"> 5.3 Item executar (run) </a>
   
-   --texto--
-  
+ * carregar (load) - 
+ * executar (run) -
+
   ![](/Imagens/.png)
   
   <a href="#menu1">Voltar ao menu </a>
   
-  ### <a name="men4"> 5.4 Item visualização (view) </a>
+  ### <a name="men4"> 5.4 Item visto (view) </a>
   
-   --texto--
+  -- texto --
+  **Exemplos:**
+  _C:\...\visto1.math_
+  _C:\...\visto2.math_
+  
+  **Observações:**  
   
   ![](/Imagens/.png)
   
@@ -212,19 +227,9 @@ O ProCalc é uma espécie de "Calculadora Programável", onde você pode desenvo
 
 ## <a name="lim"> 6. Limitações do software </a>
 
-Apesar de tantas funcionalidades do GhostScan, o software contém algumas limitações e são elas:
-
-  * A opção de **Inicialização automática** só funciona em ambientes Windows. Em outras plataformas este processo deve ser feito
-  manualmente. Exemplo: Copiar o arquivo keylogger para a pasta de inicialização automática de programas.
-  * O GhostScan só gera o arquivo keylogger se existir a JDK(Java Development Kit) instalada. A JRE não é suficiente para fazer
-  funcionar o software, já que o sistema funciona como um "Programador" que gera programas.
-  * A versão 1.0 do GhostScan não contém uma **Atualização Disponível**, isto significa que se o computador, que esta executando  
-  o GhostScan, atualizar a JRE/JDK automaticamente, existem riscos de algumas funcionalidades do software não funcionar ou ter
-  possíveis bugs. Obs.: Isto será corrigido na versão 2.0.
-  * O GhostScan deve ser instalado em um diretório que tem permissão de escrita, já que o keylogger por padrão é gerado neste diretório. Se um determinado usuário instalar o software numa pasta que não tem permissão, simplesmente os arquivos keyloggers não serão gerados. Obs.: Isto também será corrigido na versão 2.0.
-  * Se o computador do alvo, que estiver executando o keylogger, não estiver conexão com a internet ou por algum motivo a
-  conexão falhar inesperadamente, o email configurado no keylogger para de receber informações até que a conexão do alvo volte
-  ao normal. Por isso existe a opção "Testar conexão".
+*
+*
+*
   
   <a href="#menu1">Voltar ao menu</a>
   
