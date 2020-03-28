@@ -34,6 +34,13 @@ O ProCalc é uma espécie de "Calculadora Programável", onde você pode desenvo
  * <a href="#math3"> Carregando fórmulas no ProCalc (Abrindo arquivos) </a>
  * <a href="#math4"> Saída de dados (OUTPUT) </a>
  * <a href="#math5"> Entrada de dados (INPUT) </a>
+ 
+ ### Menu de navegação do ProCalc
+ * <a href="#men1"> Item arquivo (file) </a>
+ * <a href="#men2"> Item edição (edit) </a>
+ * <a href="#men3"> Item executar (run) </a>
+ * <a href="#men4"> Item visualização (view) </a>
+ * <a href="#men5"> Item ajuda (help) </a>
 
 <a name="util"><h1 align="center"> ---------- Utilização do Software ---------- </h1></a>
 
@@ -114,51 +121,94 @@ O ProCalc é uma espécie de "Calculadora Programável", onde você pode desenvo
   ![](/Imagens/.png)
   
   <a href="#menu1">Voltar ao menu </a>
- 
-### <a name="ocult"> 3.2 Ocultação de arquivo </a>
 
-Este é um processo que oculta o keylogger após executado, quando esta opção é selecionada, o modo invisível é ativado o que significa que no local que for executado o keylogger, o sistema executa comandos para fazer sumir o arquivo. Nem mesmo ativando
-a opção de "Mostrar arquivos ocultos" do painel de controle irá achar o keylogger, pois o keylogger utiliza um comando específico do sistema para ocultar arquivos, mesmo que eles ainda continuam executando na máquina do alvo.
+## 4. Programando em linguagem MATH
 
-![](/Imagens/GhostScan8.jpg)
-
-<a href="#menu1">Voltar ao menu</a>
-
-### <a name="prog"> 3.3 Programação de tempo de execução </a>
-
-Na parte de "Tempo de execução" existe uma informação que mostra a data atual e um campo de texto para inserir uma data. A data que é inserida é referente ao dia e mês que o keylogger irá ser finalizado, ou seja, parar de executar. O sistema identifica a data atual e faz uma comparação com a data inserida a cada dia que o keylogger é iniciado, quando a data atual é igual a data inserida, o sistema finaliza a tarefa relacionada ao keylogger.Isto é quando o usuário decide monitorar seu alvo durante um tempo específico.
-
-![](/Imagens/GhostScan9.jpg)
-
-<a href="#menu1">Voltar ao menu</a>
-
-## 4. Seleção de Gerador do Keylogger
+### <a name="math1"> 4.1 A linguagem DSL </a>
   
-  <a name="mailpass"></a>
-  Na Interface inicial é inserido um email e uma senha pré-criada para testes. Logo após clicar em "Testar Conexão", o sistema faz uma autenticação de login do email e envia uma mensagem confirmando que o keylogger irá funcionar com sucesso. Isto é para testar se há uma conexão com a internet e se realmente o email irá receber informações do keylogger. 
+   --texto--
   
-![](/Imagens/GhostScan10.jpg)
-
-<a name="keyname"></a>
-Após testar a conexão, é inserido o nome do arquivo Keylogger que será gerado. É recomendável que utilize um nome menos chamativo, discreto e comum, algo que o alvo não irá suspeitar. Neste caso, como o arquivo gerado é um .jar(Arquivo Executável Java), é colocado o nome "Java Update" - já que o **Atualizador do Java**(Java Update) é bastante comum estar instalado em computadores que contém a JRE(Java Runtime Environment). Após definir o nome, o botão "Criar Keylogger" é clicado e uma mensagem de confirmação pergunta se realmente quer gerar o keylogger.
-
-![](/Imagens/GhostScan11.jpg)
-
-Após clicado em sim, o arquivo nomeado **Java Update.jar** é criado na pasta de instalação do GhostScan, este arquivo pode ser transportado, enviado e executado em qualquer computador que contém a JRE.
-
-![](/Imagens/GhostScan12.jpg)
-
-_Para mais informações, consulte a pasta **Imagens** no repositório do GitHub que contém imagens que demonstra o funcionamento completo de um keylogger e o funcionamento do **Gerador de vírus**._
-
-<a href="#menu1">Voltar ao menu</a>
-
-## <a name="inf"> 5. Informações do software </a>
+  ![](/Imagens/.png)
   
-No menu de **Informações** contém o nome do software, o tipo, a função/objetivo e outras informações. Na **atualização disponível** é nenhuma por que o software não utiliza um sistema de auto-atualização ainda. A versão atualmente é 1.0, futuramente na versão 2.0 o software executará em ambientes linux, windows & mac, como também funcionalidades de: envio de informações de geo-localização, conversão de .jar para .exe (executável windows) do keylogger, definição de ícone do executável & scanner de históricos de navegadores. Na parte de **Tutorial do programa**, existe um link **Clique aqui** que redireciona para a página oficial de Download do GhostScan no Site da BFTCorporations. Lembrando que apenas a versão Trial é disponibilizada para download.
+  <a href="#menu1">Voltar ao menu </a>
+  
+### <a name="math2"> 4.2 Criando fórmulas no ProCalc (Salvando arquivos) </a>
+  
+   --texto--
+  
+  ![](/Imagens/.png)
+  
+  <a href="#menu1">Voltar ao menu </a>
+  
+ ### <a name="math3"> 4.3 Carregando fórmulas no ProCalc (Abrindo arquivos) </a>
+  
+   --texto--
+  
+  ![](/Imagens/.png)
+  
+  <a href="#menu1">Voltar ao menu </a>
+  
+  ### <a name="math4"> 4.4 Saída de dados (OUTPUT) </a>
+  
+   --texto--
+  
+  ![](/Imagens/.png)
+  
+  <a href="#menu1">Voltar ao menu </a>
+  
+  ### <a name="math5"> 4.5 Entrada de dados (INPUT) </a>
+  
+   --texto--
+  
+  ![](/Imagens/.png)
+  
+  <a href="#menu1">Voltar ao menu </a>
+  
+## 5. Menu de navegação do ProCalc
 
-![](/Imagens/GhostScan13.jpg)
+--texto--
 
-<a href="#menu1">Voltar ao menu</a>
+![](/Imagens/.png)
+
+### <a name="men1"> 5.1 Item arquivo (file) </a>
+  
+   --texto--
+  
+  ![](/Imagens/.png)
+  
+  <a href="#menu1">Voltar ao menu </a>
+  
+  ### <a name="men2"> 5.2 Item edição (edit) </a>
+  
+   --texto--
+  
+  ![](/Imagens/.png)
+  
+  <a href="#menu1">Voltar ao menu </a>
+  
+  ### <a name="men3"> 5.3 Item executar (run) </a>
+  
+   --texto--
+  
+  ![](/Imagens/.png)
+  
+  <a href="#menu1">Voltar ao menu </a>
+  
+  ### <a name="men4"> 5.4 Item visualização (view) </a>
+  
+   --texto--
+  
+  ![](/Imagens/.png)
+  
+  <a href="#menu1">Voltar ao menu </a>
+  
+  ### <a name="men5"> 5.5 Item ajuda (help) </a>
+  
+   --texto--
+  
+  ![](/Imagens/.png)
+  
+  <a href="#menu1">Voltar ao menu </a>
 
 ## <a name="lim"> 6. Limitações do software </a>
 
