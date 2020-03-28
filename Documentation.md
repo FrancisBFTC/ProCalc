@@ -1,7 +1,7 @@
 **********************************************************************************
-<h1 align="center"><a name="top">Documentação do GhostScan</a></h1>
+<h1 align="center"><a name="top">Documentação do ProCalc</a></h1>
 
-Bem vindo a documentação do GhostScan! aqui é demonstrado todas as funcionalidades atuais do software, descrições gerais e técnicas. Se optar por ler um assunto em específico abaixo contém um menu de atalho, se não, continue rolando para ler toda a documentação:
+Bem vindo a documentação do ProCalc! aqui é demonstrado todas as funcionalidades atuais do software, descrições gerais e técnicas. Se optar por ler um assunto em específico abaixo contém um menu de atalho, se não, continue rolando para ler toda a documentação:
   
   <a name="menuprincipal"></a>
   * <a href="#desc1"> Descrições Gerais </a>
@@ -10,111 +10,110 @@ Bem vindo a documentação do GhostScan! aqui é demonstrado todas as funcionali
  
 <a name="desc1"><h1 align="center"> ---------- Descrições Gerais ---------- </h1></a>
 
-O GhostScan é um software/spyware cuja finalidade é gerar arquivos que monitoram as informações de pessoas. O software funciona tal como um programador - ele cria programas chamado **Keylogger** que monitora indivíduos baseando em configurações do usuário. As configurações do usuário são: 
+O ProCalc é uma espécie de "Calculadora Programável", onde você pode desenvolver fórmulas pelo editor do ProCalc, salvar um arquivo com uma extensão e abrir este arquivo para carregar & executar as fórmulas. O software contém variáveis e operadores aritméticos para calcular operações matemáticas, tanto programadas quando no tempo atual, veja abaixo o menu de navegação:
 
 <a name="menu1"></a>
-### Seleção de Scanners:
-  * <a href="#scan1"> Scanner de mouse </a> 
-  * <a href="#scan2"> Scanner de monitor </a> 
-  * <a href="#scan3"> Scanner de IP público </a>
-  * <a href="#scan4"> Scanner de rede interna completa </a>
+### Cálculo de números:
+  * <a href="#num1"> Operador de adição </a> 
+  * <a href="#num2"> Operador de subtração </a> 
+  * <a href="#num3"> Operador de multiplicação </a>
+  * <a href="#num4"> Operador de soma </a>
   
-### Seleção de sistemas de camuflagem:
-  * <a href="#init"> Inicialização automática </a>
-  * <a href="#ocult"> Ocultação de arquivo </a>
-  * <a href="#prog"> Programação de tempo de execução </a>
+### Cálculo de variáveis:
+  * <a href="#var1"> Inserção de valores </a>
+  * <a href="#var2"> Operação em variáveis </a>
   
-### Seleção de Gerador do Keylogger:
-  * <a href="#mailpass"> Inserção de email </a>
-  * <a href="#mailpass"> Inserção de senha </a>
-  * <a href="#keyname"> Criação de nome do KeyLogger </a>
+### Representação de sistemas numéricos:
+  * <a href="#rep1"> representação decimal </a>
+  * <a href="#rep2"> representação hexadecimal </a>
+  * <a href="#rep3"> representação binária </a>
   
-### Informações relevantes
- * <a href="#inf"> Informações do software </a>
- * <a href="#lim"> Limitações do software </a>
-
-_**Observações:** Por padrão, o software gera o keylogger com <a href="#scan5"> scanner de teclado </a>, mesmo se o usuário não configurar nada._
+### Programando em linguagem MATH
+ * <a href="#math1"> A linguagem DSL </a>
+ * <a href="#math2"> Criando fórmulas no ProCalc (Salvando arquivos) </a>
+ * <a href="#math3"> Carregando fórmulas no ProCalc (Abrindo arquivos) </a>
+ * <a href="#math4"> Saída de dados (OUTPUT) </a>
+ * <a href="#math5"> Entrada de dados (INPUT) </a>
 
 <a name="util"><h1 align="center"> ---------- Utilização do Software ---------- </h1></a>
 
-## 1. Interface Inicial
+## 1. Cálculo de números
 
-  Na interface Inicial, o usuário está no menu **Início**, aqui ele insere um Email qualquer e a senha do email para envio dos
-  dados monitorados, digita o nome do arquivo do keylogger para ser gerado. Por padrão o software mantém selecionado o 
-  **Gerador de Keylogger**. O gerador de vírus é uma outra opção extra para brincar com seus amigos, são apenas vírus troll e
-  não tem a capacidade de danificar um computador, dependendo do vírus que foi gerado, Exemplo: _Scorpion_, para ser possível  danificar um sistema em sua plena natureza, o computador alvo deveria ter uma segurança extremamente falha, como: Permissões para excluir arquivos; O que não é o caso de muitos computadores hoje em dia. 
+  ### <a name="num1"> 1.1 Operador de adição </a>
   
-  **Recomendações:** _Sempre utilize um email & senha inutilizável pré-criado para inserir no software, assim para testar os vírus ou keyloggers, tenha no seu computador uma máquina virtual instalado um sistema operacional para testes._
+  --texto--
   
-  ![](/Imagens/GhostScan1.png)
+  ![](/Imagens/.png)
   
-  <a href="#menuprincipal">Voltar ao menu principal</a>
+  <a href="#menu1">Voltar ao menu </a>
   
-## 2. Seleção de Scanners
+  ### <a name="num2"> 1.2 Operador de subtração </a>
+  
+  --texto--
+  
+  ![](/Imagens/.png)
+  
+  <a href="#menu1">Voltar ao menu </a>
+  
+  ### <a name="num3"> 1.3 Operador de multiplicação </a>
+  
+  --texto--
+  
+  ![](/Imagens/.png)
+  
+  <a href="#menu1">Voltar ao menu </a>
+  
+  ### <a name="num4"> 1.4 Operador de divisão </a>
+  
+  --texto--
+  
+  ![](/Imagens/.png)
+  
+  <a href="#menu1">Voltar ao menu </a>
+  
+## 2. Cálculo de variáveis
 
-   ### <a name="scan1"> 2.1 Scanner de mouse </a>
-   
-   Com a opção de mouse selecionado, o keylogger gerado vai apenas monitorar as posições de mouse e as teclas pressionadas
-   pelo alvo. Já que o Scanner de monitor não consegue scanear o ponteiro do mouse, O Scanner do mouse vai enviar todas as 
-   informações em modo texto de posições clicadas pelo alvo. Cada região da tela que o usuário clicar, o keylogger irá enviar
-   informações com termos ao referentes aos cliques, Exemplo: Topo-esquerdo, Topo-direito, centro da tela, rodapé-esquerdo,etc...
-   
-   ![](/Imagens/GhostScan2.jpg)
-   
-   <a href="#menu1">Voltar ao menu</a>
-   
-   ### <a name="scan2"> 2.2 Scanner de monitor </a>
-   
-   Com a opção de monitor selecionado, o keylogger vai enviar anexos do tamanho completo da tela do alvo para o email configurado. A cada intervalo de tempo ou cliques do mouse, o usuário receberá um novo email com a imagem Screenshot do monitor,
-   assim o usuário poderá saber com mais detalhes o que seu alvo está fazendo visualmente.
-   
-   ![](/Imagens/GhostScan3.jpg)
-   
-   <a href="#menu1">Voltar ao menu</a>
-   
-   ### <a name="scan3"> 2.3 Scanner de IP público </a>
-   
-   Muito se sabe que IPs públicos ou **IPs Externos** revelam muita coisa sobre uma pessoa, **Exemplo:** _A localização do computador do alvo quando rastreado._ Com a opção de IP público selecionado, o keylogger enviará os números de IP público do alvo.
-   
-   ![](/Imagens/GhostScan4.jpg)
-   
-   <a href="#menu1">Voltar ao menu</a>
-   
-   ### <a name="scan4"> 2.4 Scanner de rede interna </a>
-   
-   As informações de rede interna é de grande valia pra quem conhece/trabalha na área. Com a opção de rede interna selecionada, o email configurado no keylogger recebe informações completas, como: Interfaces de redes, nomes das placas de rede instaladas, Números IPV4 e IPV6 (IPs internos), gateway, máscaras de sub-rede, broadcast, nome do computador completo e todas as redes conectadas ao computador do alvo.
-
-  ![](/Imagens/GhostScan5.jpg)
+   ### <a name="num1"> 2.1 Inserção de valores </a>
   
-  <a href="#menu1">Voltar ao menu</a>
+  --texto--
   
-  ### <a name="scan5"> 2.5 Scanner de teclado </a>
+  ![](/Imagens/.png)
   
-  Por padrão, este funcionamento não precisa ser selecionado pois o próprio keylogger encarrega de enviar informações de teclas,
-  mesmo sem nada configurado, já que o nome _Keylogger_ deriva do significado **_Registro de teclas_**. As teclas pressionadas
-  enviadas para o email são concatenadas e a cada email recebido uma parte de uma frase digitada pelo alvo é mostrada, porém sempre exibindo e completando todo o restante da frase por cada email. Sabendo que as informações escaneadas são enviadas em um intervalo de tempo de 10 segundos, Então é recomendável que o usuário baixe as informações de emails relevantes e sempre procure 
-  fazer uma "limpeza" da sua caixa de entrada, pois a quantidade de informações recebidas em 1 dia é absurdamente grande. Este é um outro exemplo para usar um **Email de teste inutilizável** na configuração do keylogger.
+  <a href="#menu1">Voltar ao menu </a>
   
-  Neste exemplo da imagem é selecionado todas as opções, o keylogger escaneará e enviará pro email informações de: Posições clicadas do mouse, ScreenShot do monitor, IP público, configurações completas de rede interna e principalmente - As teclas pressionadas.
+  ### <a name="num2"> 2.2 Operação em variáveis </a>
   
-   ![](/Imagens/GhostScan6.jpg)
-   
-   <a href="#menu1">Voltar ao menu</a>
+  --texto--
   
-## 3. Seleção de sistemas de camuflagem
+  ![](/Imagens/.png)
+  
+  <a href="#menu1">Voltar ao menu </a>
+  
+## 3. Representação de sistemas numéricos
 
-### <a name="init"> 3.1 Inicialização automática </a>
-
-Nesta opção, o sistema do keylogger se responsabiliza em se auto-copiar para a pasta descrito na variável de ambiente **%AppData%** cujo conteúdo é "C:\Users\xxxx\AppData\Roaming\", onde "xxxx" seria a pasta de usuário do computador, o sistema faz uma concatenação com os próximos diretórios, ficando: "C:\Users\xxxx\AppData\Roaming\Microsoft\Windows\Start Menu\Programs". Neste diretório é aonde fica todos os programas que executa automaticamente quando o computador é ligado, então se o keylogger é
-copiado para este diretório significa que o keylogger vai executar automaticamente toda vez que o computador ligar. 
-
-**Observações:** _Percebemos que este diretório é pertencente a plataforma **Windows**. Isso significa que se for monitorar uma pessoa que está utilizando uma plataforma linux, a opção de **Inicialização Automática** não irá funcionar. Porém o processo de copiar para a pasta de inicialização pode ser feita manualmente._
-
-**Detalhes:** _O software foi desenvolvido para ambientes Windows, mesmo que o GhostScan tenha funcionalidades que também executa no Linux. Futuramente o código fonte será adaptado para executar todas as funcionalidades em quaisquer plataformas._
-
- ![](/Imagens/GhostScan7.jpg)
- 
- <a href="#menu1">Voltar ao menu</a>
+  ### <a name="rep1"> 3.1 Representação decimal </a>
+  
+   --texto--
+  
+  ![](/Imagens/.png)
+  
+  <a href="#menu1">Voltar ao menu </a>
+  
+  ### <a name="rep2"> 3.2 Representação hexadecimal </a>
+  
+   --texto--
+  
+  ![](/Imagens/.png)
+  
+  <a href="#menu1">Voltar ao menu </a>
+  
+  ### <a name="rep3"> 3.3 Representação binária </a>
+  
+   --texto--
+  
+  ![](/Imagens/.png)
+  
+  <a href="#menu1">Voltar ao menu </a>
  
 ### <a name="ocult"> 3.2 Ocultação de arquivo </a>
 
