@@ -41,6 +41,9 @@ O ProCalc é uma espécie de "Calculadora Programável", onde você pode desenvo
  * <a href="#men3"> Item executar (run) </a>
  * <a href="#men4"> Item visto (view) </a>
  * <a href="#men5"> Item ajuda (help) </a>
+ 
+ ### * <a href="#lim"> Limitações do software </a>
+ 
 
 <a name="util"><h1 align="center"> ---------- Utilização do Software ---------- </h1></a>
 
@@ -172,11 +175,11 @@ O ProCalc é uma espécie de "Calculadora Programável", onde você pode desenvo
 
 ### <a name="men1"> 5.1 Item arquivo (file) </a>
   
- * novo (new) - 
- * abrir (open) -
- * salvar (save) -
- * salvar como (save as)
- * sair (quit) -
+ * **novo (new) -** 
+ * **abrir (open) -**
+ * **salvar (save) -**
+ * **salvar como (save as) -**
+ * **sair (quit) -**
   
   ![](/Imagens/.png)
   
@@ -184,12 +187,12 @@ O ProCalc é uma espécie de "Calculadora Programável", onde você pode desenvo
   
   ### <a name="men2"> 5.2 Item edição (edit) </a>
   
- * selecionar (undo) - 
- * copiar (copy) -
- * recortar (cut) -
- * colar (paste)
- * converter (conversor) -
- * limpar (clear) -
+ * **selecionar (undo) -**
+ * **copiar (copy) -**
+ * **recortar (cut) -**
+ * **colar (paste) -**
+ * **converter (conversor) -**
+ * **limpar (clear) -**
   
   ![](/Imagens/.png)
   
@@ -197,8 +200,8 @@ O ProCalc é uma espécie de "Calculadora Programável", onde você pode desenvo
   
   ### <a name="men3"> 5.3 Item executar (run) </a>
   
- * carregar (load) - 
- * executar (run) -
+ * **carregar (load) -** 
+ * **executar (run) -**
 
   ![](/Imagens/.png)
   
@@ -207,10 +210,10 @@ O ProCalc é uma espécie de "Calculadora Programável", onde você pode desenvo
   ### <a name="men4"> 5.4 Item visto (view) </a>
   
   -- texto --
-  **Exemplos:**
-  _C:\...\visto1.math_
+  **Exemplos:**<br>
+  _C:\...\visto1.math_<br>
   _C:\...\visto2.math_
-  
+  <br>
   **Observações:**  
   
   ![](/Imagens/.png)
@@ -230,7 +233,7 @@ O ProCalc é uma espécie de "Calculadora Programável", onde você pode desenvo
 *
 *
 *
-  
+  <br>
   <a href="#menu1">Voltar ao menu</a>
   
 <a name="desc2"><h1 align="center"> ---------- Descrições Técnicas ---------- </h1></a>
