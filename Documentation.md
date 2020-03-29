@@ -132,23 +132,26 @@ O ProCalc é uma espécie de "Calculadora Programável", onde você pode desenvo
 
 ### <a name="math1"> 4.1 A linguagem DSL </a>
   
-   --texto--
+   A linguagem **Math** (Matemática) é uma linguagem para criar fórmulas no ProCalc, é também chamada de _Linguagem DSL_, que significa **Domain Specific Language** ou **Linguagem de domínio específico**. Cada software do mercado pode ter sua própria linguagem DSL para operações específicas daquele software, como exemplo: A linguagem VBA do pacote office e microsoft excel. O Math não é diferente, ele é programado direto no editor do ProCalc e pode ser criado arquivos com a extensão .math na qual é aberto com o software ProCalc. As fórmulas básicas desta linguagem são carregadas e executadas pelo software, tendo possibilidades de executar operações aritméticas, entrada de dados com loop de repetição e saída de dados.
   
-  ![](/Imagens/.png)
+  ![](/Imagens/procalc12.png)
+  ![](/Imagens/procalc13.png)
   
   <a href="#menu1">Voltar ao menu </a>
   
 ### <a name="math2"> 4.2 Criando fórmulas no ProCalc (Salvando arquivos) </a>
   
-   --texto--
+   Primeiramente, a fórmula em Math deve ser criada pelo editor do ProCalc, após isso, poderá clicar em **CTRL + S** ou no menu de navegação **file** onde contém a opção **save as** (salvar como). É aberta uma janela para definir um nome do arquivo, escolher localização e salvar o arquivo com a extensão .math, cujo tipo do arquivo é: Arquivo de fórmulas do ProCalc.
   
-  ![](/Imagens/.png)
+  ![](/Imagens/procalc14.png)
+  ![](/Imagens/procalc15.png)
+  ![](/Imagens/procalc16.png)
   
   <a href="#menu1">Voltar ao menu </a>
   
  ### <a name="math3"> 4.3 Carregando fórmulas no ProCalc (Abrindo arquivos) </a>
   
-   --texto--
+   
   
   ![](/Imagens/.png)
   
