@@ -294,4 +294,4 @@ Neste menu, cada opção contém uma lista de itens que podem ser clicados ou di
  
  Site Oficial : [bftcorporations.mywebcommunity.org](http://bftcorporations.mywebcommunity.org/Courses)
  
- [Voltar ao repositório](https://github.com/FrancisBFTC/ProCalc/)
+ [Voltar ao repositório](https://github.com/FrancisBFTC/ProCalc-C/)
