@@ -245,10 +245,10 @@ Neste menu, cada opção contém uma lista de itens que podem ser clicados ou di
   Neste item, todos os arquivos de fórmulas abertos recentemente são listados e colocados no topo, o termo correto a se dizer seria: Empilhados. Pois cada novo arquivo aberto, o diretório completo deste arquivo é exibido no topo.
   <br></br>
   **Exemplos:**<br>
-  _C:\...\visto1.math_<br>
   _C:\...\visto2.math_<br>
+  _C:\...\visto1.math_<br>
   <br>
-  **Observações:** _A opção **view** só é disponível quando um arquivo já foi aberto, o item **reset** limpa todos os diretórios listados, deixando indisponível novamente a opção **view**_  
+  **Observações:** _A opção **view** só é disponível quando um arquivo já foi aberto, o item **reset views** limpa todos os diretórios listados, deixando indisponível novamente a opção **view**_  
   
   ![](/Imagens/procalc40.png)
   ![](/Imagens/procalc41.png)
@@ -275,11 +275,18 @@ Neste menu, cada opção contém uma lista de itens que podem ser clicados ou di
   
 <a name="desc2"><h1 align="center"> ---------- Descrições Técnicas ---------- </h1></a>
 
--- texto --
+Na parte de **Descrições técnicas** será comentado sobre configurações & organização do software e a parte de desenvolvimento do software incluido algoritmos e lógica matemática, logo abaixo é exibido alguns tópicos:
 
-### Titulo 1
-
-### Titulo 2
+### Configuração & Organização do software
+ * <a href="#ass1"> Associação de arquivos do programa </a>
+ * <a href="#dir1"> Diretório de instalação </a>
+ 
+### Desenvolvimento do software
+ * <a href="#des1"> Algoritmos </a>
+ * <a href="#des2"> Lógica matemática </a>
+ * <a href="#des3"> Interface gráfica </a>
+ * <a href="#des4"> Interpretação de linguagem </a>
+ * <a href="#des5"> Argumentos do software/linha de comando</a>
 
  
  **Observações:** _Estes códigos, documentação e software estão protegidos por direitos autorais. Portanto é proibido a cópia/plágio, a distribuição ou venda do software/código descrito pelo Art. 184 do Código Penal - Decreto Lei 2848/40._
