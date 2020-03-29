@@ -42,7 +42,7 @@ O ProCalc é uma espécie de "Calculadora Programável", onde você pode desenvo
  * <a href="#men4"> Item visto (view) </a>
  * <a href="#men5"> Item ajuda (help) </a>
  
- ### * <a href="#lim"> Limitações do software </a>
+ ###  <a href="#lim"> Limitações do software </a>
  
 
 <a name="util"><h1 align="center"> ---------- Utilização do Software ---------- </h1></a>
@@ -51,33 +51,33 @@ O ProCalc é uma espécie de "Calculadora Programável", onde você pode desenvo
 
   ### <a name="num1"> 1.1 Operador de adição </a>
   
-  --texto--
+  No ProCalc, assim como uma calculadora básica, pode-se fazer calculos numéricos utilizando operadores aritméticos, como: adição. Poderá somar simples números como vários números ao mesmo tempo, gerando um resultado de saída. **Exemplo:** _5 + 4 + 2 = 11._
   
-  ![](/Imagens/.png)
+  ![](/Imagens/procalc1.png)
   
   <a href="#menu1">Voltar ao menu </a>
   
   ### <a name="num2"> 1.2 Operador de subtração </a>
   
-  --texto--
+  Com o operador de subtração é possível subtrair uma sequência de números simples ou vários números, **Exemplo:** _10 - 2 - 5 = 3._
   
-  ![](/Imagens/.png)
+  ![](/Imagens/procalc2.png)
   
   <a href="#menu1">Voltar ao menu </a>
   
   ### <a name="num3"> 1.3 Operador de multiplicação </a>
   
-  --texto--
+  Com o operador de multiplicação, funciona da mesma forma como os anteriores porém multiplicando valores, **Exemplo:** _5 x 3 x 2 = 30._
   
-  ![](/Imagens/.png)
+  ![](/Imagens/procalc3.png)
   
   <a href="#menu1">Voltar ao menu </a>
   
   ### <a name="num4"> 1.4 Operador de divisão </a>
   
-  --texto--
+  Já na parte de divisão, os números são divididos com um simples problema: Apenas são gerados números inteiros. No ProCalc os valores reais não são utilizados, no entanto isto será corrigido em outras versões. Vamos ver um exemplo de divisão de uma sequência de números - **Exemplo:** _20 / 2 / 2 = 5._
   
-  ![](/Imagens/.png)
+  ![](/Imagens/procalc4.png)
   
   <a href="#menu1">Voltar ao menu </a>
   
@@ -85,17 +85,20 @@ O ProCalc é uma espécie de "Calculadora Programável", onde você pode desenvo
 
    ### <a name="var1"> 2.1 Inserção de valores </a>
   
-  --texto--
+  Nos cálculos de variáveis funciona tal como os cálculos de números, a única diferença é que primeiro os valores de cada variável a serem calculados devem ser definidos, então neste exemplo utilizamos as variáveis **A** , **B** e **C**. Inserimos valores para cada uma delas, sendo **A** = 5, **B** = 3 e **C** = 2.
   
-  ![](/Imagens/.png)
+  ![](/Imagens/procalc5.png)
+  ![](/Imagens/procalc6.png)
+  ![](/Imagens/procalc7.png)
+  
   
   <a href="#menu1">Voltar ao menu </a>
   
   ### <a name="var2"> 2.2 Operação em variáveis </a>
   
-  --texto--
+  Logo após inserimos valores no exemplo anterior, criamos uma fórmula aritmética das variáveis pelo editor: Fazemos uma multiplicação de A com B e subtraímos o resultado por C, o valor de saída será **13** (5 x 3 - 2 = 13).
   
-  ![](/Imagens/.png)
+  ![](/Imagens/procalc8.png)
   
   <a href="#menu1">Voltar ao menu </a>
   
@@ -103,25 +106,25 @@ O ProCalc é uma espécie de "Calculadora Programável", onde você pode desenvo
 
   ### <a name="rep1"> 3.1 Representação decimal </a>
   
-   --texto--
+   As representações de sistemas numéricos são constantemente usadas na matemática para computação. Cada sistema numérico existe uma **base** de cálculo, como na _base de 10_ que representa um valor decimal, **Exemplo:** _O número **13**._ Para converter para valor decimal deverá ser clicado no botão **Dec** do ProCalc.
   
-  ![](/Imagens/.png)
+  ![](/Imagens/procalc9.png)
   
   <a href="#menu1">Voltar ao menu </a>
   
   ### <a name="rep2"> 3.2 Representação hexadecimal </a>
   
-   --texto--
+   Pegando como exemplo anterior, o número **13**, iremos clicar no botão **Hex** para converter o número 13 para um valor hexadecimal, na qual este tipo de valor utiliza a _base de 16_, cujo valor será **d** ou **0d**.
   
-  ![](/Imagens/.png)
+  ![](/Imagens/procalc10.png)
   
   <a href="#menu1">Voltar ao menu </a>
   
   ### <a name="rep3"> 3.3 Representação binária </a>
   
-   --texto--
+   Na computação, **códigos binários** são utilizados segundo a tabela ASCII, porém neste tipo de representação de sistemas numéricos, utilizamos os **códigos BCD** para converter valores decimais para binários de 4 bits, enquanto que nos códigos binários temos valores de 8 bits. Nesta representação, utilizamos a _base de 2_ para calcular o número **13** em decimal que é o mesmo de **0d** em hexadecimal, o valor binário deste número será: **1101**.
   
-  ![](/Imagens/.png)
+  ![](/Imagens/procalc11.png)
   
   <a href="#menu1">Voltar ao menu </a>
 
