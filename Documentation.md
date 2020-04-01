@@ -277,6 +277,7 @@ Neste menu, cada opção contém uma lista de itens que podem ser clicados ou di
 
 Na parte de **Descrições técnicas** será comentado sobre configurações & organização do software e a parte de desenvolvimento do software incluido algoritmos e lógica matemática, logo abaixo é exibido alguns tópicos:
 
+<a name="menu2"></a>
 ### Configuração & Organização do software
  * <a href="#ass1"> Associação de arquivos do programa </a>
  * <a href="#dir1"> Diretório de instalação </a>
@@ -292,19 +293,51 @@ Na parte de **Descrições técnicas** será comentado sobre configurações & o
  
  ### <a name="ass1"> 1.1 Associação de arquivos do programa </a>
  
+ Os arquivos de extensão .math podem ser abertos por qualquer editor de texto porém precisa ser aberto pelo ProCalc para carregar e executar suas fórmulas (Isto será explicado no Item 2.5). No entanto, os arquivos abrem com o software e o ícone do software é setado nos arquivos, para haver esta associação executamos scripts de registro para inserir no registro do windows confgurações para que esta operação seja possível. No repositório do ProCalc, existe uma pasta de instalação do software, onde contém a pasta registry com arquivos .reg para executar e inserir registros. O script insere valores e pastas na entrada **HKEY_CLASSES_ROOT** para criar pastas de comandos (execução & edição) e na entrada **HKEY_CURRENT_USER** para operações de usuário. Logo após as configurações ser setadas os arquivos .math assumem o ícone do ProCalc, podendo ser clicados e abertos com o software, o tipo de arquivo "Arquivos de fórmulas do ProCalc" também é setado reconhecendo a extensão.
+ 
+ <a href="#menu2">Voltar ao menu</a>
+ 
  ### <a name="dir1"> 1.2 Diretório de instalação </a>
+ 
+ Como na descrição anterior do Item 1.1, sabemos que para um arquivo com uma extensão específica abrir com um determinado programa, nos scripts de registro é preciso setar um valor padrão para um diretório onde há o software instalado. Então para estas configurações funcionarem, é preciso escrever na entrada "**[HKEY_CLASSES_ROOT\ProCalc.calc\shell\Open\command]**" do arquivo **ProCalcRoot.reg** o valor padrão com o mesmo diretório de instalação, após o software ser instalado num determinado diretório, basta editar este arquivo .reg e executá-lo. Já que no próprio software não contém funções específicas para efetuar registros durante a instalação.
+ 
+ <a href="#menu2">Voltar ao menu</a>
  
 ## 2. Desenvolvimento do software
 
  ### <a name="des1"> 2.1 Algoritmos </a>
  
+ Dentro da pasta de códigos que está em outro repositório do ProCalc, existe o arquivo **calc.h** que é um arquivo de cabeçalho em C para criar variáveis, definir macros e importar bibliotecas de _String_, _Funções em C_ e _Operações nativas do Windows_. No arquivo "calc.h" é definido macros de teclas, macros de menu, macros de botões da calculadora, variáveis que guardam textos e fórmulas MATH, variáveis lógicas de controle do software, entre outros... 
+ 
+ O arquivo **calc.rc** é um arquivo de recursos onde são definidos scripts de **_ícone do software_** e **_menu do software_** - É criado um MENU **CalcMenu**, onde dentro dele existem alguns POPUPs, como: **file**, **edit**, **run**, **view** e **help**. E em cada POPUP existem os MENUITEMs como itens comuns de um menu, cada MENUITEM é composto por uma string que define o nome daquele item, Exemplo: **new**, **save as**, **open**, etc... cada MENUITEM existe uma _identificação_ de uma macro (As macros de menu definidas em calc.h). 
+ 
+ O CalcMenu é setada na variável **menu1** em calc.h e carregada na função **LoadClass** que é executada dentro da função **WinMain** no arquivo **ProCalc.cpp**. O WinMain é a função principal da estrutura **WINAPI** da biblioteca do Windows, nesta função é retornado um inteiro que é o parâmetro da variável **MSG**, onde dentro desta variável contém mensagens de execução que são obtidas, traduzidas e dispachadas em um loop de repetição que irá identificar interação com o software, Exemplo: _A identificação de clique de teclas_. Na função principal também é setada a variável **ProCalc** do tipo **HWND** onde a partir desta variável é criada a primeira janela do ProCalc e é exibida em **ShowWindow**.
+ 
+ Na função **LoadClass** é carregada a função **CalcProc**, do tipo LRESULT CALLBACK, caso o parâmetro _ord_ for 0. No CalcProc é criada os botões da calculadora caso o parâmetro de mensagem (msg) for WM_CREATE, agora caso o parâmetro for WM_COMMAND, é verificado no switch o parâmetro **act1** que irá identificar a interação de cada botão e item de menu no software, para cada interação contém uma funcionalidade específica, como: Armazenamento em variáveis, Cálculo de variáveis, Cálculo de números, Operações de menu, Interpretação da linguagem MATH, etc... para operações de menu, existem as chamadas das seguintes funções:
+ 
+ * **LoadFileArgv -** Para carregar e armazenar os argumentos no carregamento do arquivo, **Exemplo:** _ProCalc arquivo.math_.
+ * **LoadFile -** Para carregar e armazenar os textos de um determinado arquivo Math aberto.
+ * **LoadPath -** Para carregar e armazenar o diretório de um arquivo aberto.
+ * **SaveFile -** Para salvar arquivo em um diretório carregado e identificar se é um arquivo em edição ou um novo, **Exemplo:** _save as_ & _save_.
+ * **OpenFile -** Para abrir janela de abrir arquivo e identificar se o arquivo será apenas carregado no software ou o processo oposto: salvar um arquivo com **SaveFile** em um diretório carregado em **LoadPath**. O texto é carregado em variáveis que estão em **calc.h**.
+ 
+ <a href="#menu2">Voltar ao menu</a>
+ 
  ### <a name="des2"> 2.2 Lógica matemática </a>
+ 
+ <a href="#menu2">Voltar ao menu</a>
  
  ### <a name="des3"> 2.3 Interface gráfica </a>
  
+ <a href="#menu2">Voltar ao menu</a>
+ 
  ### <a name="des4"> 2.4 Interpretação de linguagem </a>
  
+ <a href="#menu2">Voltar ao menu</a>
+ 
  ### <a name="des5"> 2.5 Argumentos do software/linha de comando</a>
+ 
+ <a href="#menu2">Voltar ao menu</a>
  
  **Observações:** _Estes códigos, documentação e software estão protegidos por direitos autorais. Portanto é proibido a cópia/plágio, a distribuição ou venda do software/código descrito pelo Art. 184 do Código Penal - Decreto Lei 2848/40._
  
