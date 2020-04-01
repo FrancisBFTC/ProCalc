@@ -321,17 +321,33 @@ Na parte de **Descrições técnicas** será comentado sobre configurações & o
  * **SaveFile -** Para salvar arquivo em um diretório carregado e identificar se é um arquivo em edição ou um novo, **Exemplo:** _save as_ & _save_.
  * **OpenFile -** Para abrir janela de abrir arquivo e identificar se o arquivo será apenas carregado no software ou o processo oposto: salvar um arquivo com **SaveFile** em um diretório carregado em **LoadPath**. O texto é carregado em variáveis que estão em **calc.h**.
  
+ **Observações:** A função principal, como também a função de carregamento de classe Windows e operações de arquivo, são programadas no arquivo **ProCalc.cpp** enquanto que variáveis/macros e interface de menu são definidas em **calc.h** e **calc.rc**, o projeto foi desenvolvido na IDE **Dev-Cpp**. Para mais informações, veja os códigos no repositório [ProCalc-C](https://github.com/FrancisBFTC/ProCalc-C/).
+ 
  <a href="#menu2">Voltar ao menu</a>
  
  ### <a name="des2"> 2.2 Lógica matemática </a>
+ 
+ Nas operações de botões da calculadora, criada em **CalcProc**, uma lógica matemática é executada para calculos de números e variáveis. Dependendo da operação aritmética identificada, o número de um determinado botão é atribuido a uma variável inteira temporária **memory**, a questão é que além da atribuição, o valor é calculado. Por exemplo: se a operação for _multplicação_, o valor é atribuído e multiplicado ao mesmo tempo; Se for _subtração_, o valor é atribuído e subtraído ao mesmo tempo, etc...
+ 
+ Se uma letra é identificada na operação, o valor em **memory** é depositado numa variável referente a letra identificada. Exemplo: **A** = **memory**; Assim, se uma variável fornece atribuição na fórmula em Math, aquela variável guardará o resultado e após a atribuição em Math, memory é zerada. Em cada botão, um número específico é armazenado na variável **num**, se estamos lidando com valores decimais, então 10 é atribuído e multiplicado em num, e o número específico é atribuído e somado em num. A variável memory recebe e se opera com num de acordo com a operação e o resultado é mostrada no editor o que está em memory quando o símbolo de _=_ é clicado.
+ 
+ Cada variável de **A** a **F** é identificada nos cliques de botões pra armazenar valores, porém estes valores são "concatenados" aritméticamente na variável **lmemory**, onde a partir desta é exibido no editor o resultado de operações em variáveis.
+ 
+ Na lógica de sistemas numéricos, apenas o formato binário contém um algoritmo de conversão, se é que no formato hexadecimal a própria linguagem C fornece no **sprintf** o parâmetro "%x" para exibir valores hexadecimais, já que no ProCalc operações aritméticas com sistemas numéricos não são efetuados. Na operação binária um número é identificado em guardado em **number**, enquanto number é diferente de 0, um inteiro é incrementado para servir de índice no array **getbin[]**, em cada posição crescente de getbin, armazena-se o valor de number % 2, onde o valor será 0 ou 1, number recebe number dividido por 2 alterando em cada iteração o seu valor, novamente este valor alterado é verificado se é divisível por 2, guardando na próxima posição de getbin um valor 0 ou 1, a partir do momento que number chega a 0, o loop para sua execução e getbin recebe uma sequência binária invertida. Então, um outro loop é executado para exibir no editor a sequência binária inversamente, assim, um BCD de um número decimal é exibido.
  
  <a href="#menu2">Voltar ao menu</a>
  
  ### <a name="des3"> 2.3 Interface gráfica </a>
  
+ O ProCalc utiliza a API Windows.h para gerar a interface gráfica. Em CalcProc, a função **CreateWindow** é usada para criar um editor de texto e botões, onde nesta função é utilizada parâmetros que define o tipo de elemento (Editor ou Botão), valores neste elemento, como: números, texto, etc... visibilidade, borda, tamanho do elemento, a interface na qual este elemento será exibido e identificação numérica daquele elemento (macros definido em calc.h), tal identificação numérica será usada para controle do determinado elemento em WM_COMMAND utilizando switch e cases dentro da função CalcProc.
+ 
+ Duas variáveis globais são setadas no arquivo **ProCalc.cpp**: **ProCalc** & **Calc**. Calc do tipo HWND é usada para os elementos da interface principal na função CalcProc, na qual Calc armazena o parâmetro **calc** desta função. Enquanto que a variável ProCalc, também do tipo HWND recebe, na função principal WinMain, a função **CreateWindowEx**, onde os parâmetros do CreateWindowEx recebe a classe de uma estrutura, o título, valores de tamanho e posição da interface, uma instância e o menu. Portanto, a variável ProCalc é definida em ShowWindow para executar a janela principal e tal variável também é usada para carregar a barra de menu e identificar cliques em itens de menu e sub-menu.
+ 
+ 
  <a href="#menu2">Voltar ao menu</a>
  
  ### <a name="des4"> 2.4 Interpretação de linguagem </a>
+ 
  
  <a href="#menu2">Voltar ao menu</a>
  
