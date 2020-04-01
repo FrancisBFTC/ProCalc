@@ -288,6 +288,23 @@ Na parte de **Descrições técnicas** será comentado sobre configurações & o
  * <a href="#des4"> Interpretação de linguagem </a>
  * <a href="#des5"> Argumentos do software/linha de comando</a>
 
+## 1. Configuração & Organização do software
+ 
+ ### <a name="ass1"> 1.1 Associação de arquivos do programa </a>
+ 
+ ### <a name="dir1"> 1.2 Diretório de instalação </a>
+ 
+## 2. Desenvolvimento do software
+
+ ### <a name="des1"> 2.1 Algoritmos </a>
+ 
+ ### <a name="des2"> 2.2 Lógica matemática </a>
+ 
+ ### <a name="des3"> 2.3 Interface gráfica </a>
+ 
+ ### <a name="des4"> 2.4 Interpretação de linguagem </a>
+ 
+ ### <a name="des5"> 2.5 Argumentos do software/linha de comando</a>
  
  **Observações:** _Estes códigos, documentação e software estão protegidos por direitos autorais. Portanto é proibido a cópia/plágio, a distribuição ou venda do software/código descrito pelo Art. 184 do Código Penal - Decreto Lei 2848/40._
  
@@ -301,4 +318,4 @@ Na parte de **Descrições técnicas** será comentado sobre configurações & o
  
  Site Oficial : [bftcorporations.mywebcommunity.org](http://bftcorporations.mywebcommunity.org/Courses)
  
- [Voltar ao repositório](https://github.com/FrancisBFTC/ProCalc-C/)
+ [Voltar ao repositório](https://github.com/FrancisBFTC/ProCalc/)
